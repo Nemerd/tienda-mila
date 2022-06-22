@@ -1,0 +1,9 @@
+.CartWidget {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.Contador {
+    font-size: 3vh;
+}

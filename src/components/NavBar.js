@@ -6,18 +6,19 @@
  */
 
 import logo from "../media/Logo.jpg"
+import CartWidget from './CartWidget.js';
 
 function NavBar() {
     const style = {
         display: "flex",
         flexFlow: "row",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "space-evenly",
         backgroundColor: "lightblue"
     };
     return (
         <div style={style}>
-            <a href="#" style={{display: "flex", flexFlow: "row", alignItems: "center"}}>
+            <a href="#" style={{ display: "flex", flexFlow: "row", alignItems: "center" }}>
                 <img src={logo} alt="Logo"></img>
                 <div>Tienda-mila</div>
             </a>
@@ -27,9 +28,7 @@ function NavBar() {
             <a href="#">
                 <div>Menu</div>
             </a>
-            <a href="#">
-                <div>Carrito</div>
-            </a>
+            <CartWidget num="5" />
         </div>
     );
 }
