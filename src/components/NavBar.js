@@ -1,25 +1,19 @@
-/* 
- * Este archivo debe crear un NavBar que contenga:
- * [] Branding
- * [] Listado de categorias clickeables
- * [] (Opcional) Incorporar Bootstrap
- */
-
 import logo from "../media/Logo.jpg"
 import CartWidget from './CartWidget.js';
 
-function NavBar() {
+function NavBar(props) {
     const style = {
         display: "flex",
         flexFlow: "row",
         alignItems: "center",
         justifyContent: "space-evenly",
-        backgroundColor: "lightblue"
+        backgroundColor: "lightblue",
+        height: '10vh'
     };
     return (
         <div style={style}>
             <a href="#" style={{ display: "flex", flexFlow: "row", alignItems: "center" }}>
-                <img src={logo} alt="Logo"></img>
+                <img src={logo} alt="Logo" style={{height: "10vh"}}></img>
                 <div>Tienda-mila</div>
             </a>
             <a href="#">
@@ -29,6 +23,7 @@ function NavBar() {
                 <div>Menu</div>
             </a>
             <CartWidget num="5" />
+            {props.children}
         </div>
     );
 }

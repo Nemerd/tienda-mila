@@ -1,0 +1,15 @@
+.ItemCount {
+    display: flex;
+    flex-flow: row;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: red;
+}
+
+.ItemCount button {
+    margin: 1vw;
+}
+
+.ItemCount p {
+    margin: 1vw;
+}
