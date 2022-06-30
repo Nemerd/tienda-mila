@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import ItemCount from './components/ItemCount';
+import ItemList from './components/ItemList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar></NavBar>
-    <App />
+    {/* <App /> */}
+    <ItemList />
   </React.StrictMode>
 );
 
