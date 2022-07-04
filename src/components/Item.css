@@ -6,6 +6,9 @@
     border: 3px;
     border-style: solid;
     border-color: blue;
+    margin: 5%;
+    max-width: 260px;
+    min-width: 100px;
 }
 
 .id {}
@@ -17,5 +20,6 @@
 .price {}
 
 .picture {
-    height: 30vh
+    width: 100%;
+    height: auto;
 }
