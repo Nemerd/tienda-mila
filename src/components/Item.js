@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 function Item({id, title, price, pictureUrl}) {
-    const [id, setId] = useState(id);
+    const [ID, setID] = useState(id);
 
     return (
         <>
-        <p>{id}</p>
+        <p>{ID}</p>
         <p>{title}</p>
         <p>{price}</p>
         <img src={pictureUrl} />

@@ -12,7 +12,20 @@ root.render(
   <React.StrictMode>
     <NavBar></NavBar>
     {/* <App /> */}
-    <ItemList />
+    <ItemList item={[{
+        id: 0,
+        title: "Milanesa con papas",
+        price: 650,
+        pictureUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        descripcion: "Milanesa como la que hace mamá cuando está apurada, pero más rica."
+    },
+    {
+        "id": 1,
+        "title": "Milanesa napolitana",
+        "price": 700,
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        "descripcion": "No, no es importada. Solo le ponemos queso y tomate encima. (Sí, también viene con papas)."
+    }]}/>
   </React.StrictMode>
 );
 
