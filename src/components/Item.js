@@ -1,15 +1,16 @@
 import { useState } from "react";
+import "./Item.css";
 
 function Item({id, title, price, pictureUrl}) {
     const [ID, setID] = useState(id);
 
     return (
-        <>
-        <p>{ID}</p>
-        <p>{title}</p>
-        <p>{price}</p>
-        <img src={pictureUrl} />
-        </>
+        <div className="card">
+        <p className="id">{ID}</p>
+        <p className="title">{title}</p>
+        <p className="price">${price}</p>
+        <img className="picture" src={pictureUrl} />
+        </div>
     )
 }
 
