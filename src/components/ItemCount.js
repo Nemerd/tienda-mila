@@ -2,23 +2,23 @@ import {useState} from 'react';
 import './ItemCount.css';
 
 function ItemCount({stock}){
-    const [cantidad, setCantidad] = useState(1)
+    const [quantity, setQuantity] = useState(1)
 
-    const sumarUno = () => {
-        if (cantidad < stock) {
-            setCantidad(cantidad + 1);
+    const add = () => {
+        if (quantity < stock) {
+            setQuantity(quantity + 1);
         }
     }
-    const restarUno = () => {
-        if (cantidad > 1) {
-            setCantidad(cantidad - 1);
+    const rest = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
         }
     }
     return (
         <div className='ItemCount'>
-            <button onClick={restarUno}>-</button>
-            <p>{cantidad}</p>
-            <button onClick={sumarUno}>+</button>
+            <button onClick={rest}>-</button>
+            <p>{quantity}</p>
+            <button onClick={add}>+</button>
         </div>
     )
 }

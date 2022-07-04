@@ -1,0 +1,27 @@
+.ItemDetail {
+    display: grid;
+    grid-template-areas: "picture title"
+        "picture price"
+        "picture description";
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 10% 10% 80%;
+    grid-gap: 2%;
+}
+
+.title {
+    grid-area: title;
+    justify-self: center;
+}
+
+.price {
+    grid-area: price;
+    justify-self: center;
+}
+
+.picture {
+    grid-area: picture;
+}
+
+.description {
+    grid-area: description;
+}

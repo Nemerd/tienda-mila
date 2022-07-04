@@ -6,13 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './components/NavBar';
 import ItemCount from './components/ItemCount';
 import ItemList from './components/ItemList';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar></NavBar>
     {/* <App /> */}
-    <ItemList item={[{
+    {/* <ItemList item={[{
         id: 0,
         title: "Milanesa con papas",
         price: 650,
@@ -25,7 +26,14 @@ root.render(
         "price": 700,
         "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
         "descripcion": "No, no es importada. Solo le ponemos queso y tomate encima. (Sí, también viene con papas)."
-    }]}/>
+    }]}/> */}
+    <ItemDetailContainer index={0} placeholder={{
+        id: 0,
+        title: "Milanesa con papas",
+        price: 650,
+        pictureUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        descripcion: "Milanesa como la que hace mamá cuando está apurada, pero más rica."
+    }}/>
   </React.StrictMode>
 );
 
