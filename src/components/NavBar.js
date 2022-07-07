@@ -1,5 +1,6 @@
 import logo from "../media/Logo.jpg"
 import CartWidget from './CartWidget.js';
+import {Linx} from 'react-router-dom';
 
 function NavBar(props) {
     const style = {
@@ -12,16 +13,16 @@ function NavBar(props) {
     };
     return (
         <div style={style}>
-            <a href="#" style={{ display: "flex", flexFlow: "row", alignItems: "center" }}>
+            <Link to="/home" style={{ display: "flex", flexFlow: "row", alignItems: "center" }}>
                 <img src={logo} alt="Logo" style={{height: "10vh"}}></img>
                 <div>Tienda-mila</div>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/home">
                 <div>Inicio</div>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/home">
                 <div>Menu</div>
-            </a>
+            </Link>
             <CartWidget num="5" />
             {props.children}
         </div>
