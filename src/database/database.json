@@ -4,27 +4,71 @@
         "title": "Milanesa con papas",
         "price": 650,
         "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        "category": "Mila",
         "description": "Milanesa como la que hace mamá cuando está apurada, pero más rica."
     },
     {
         "id": 1,
         "title": "Milanesa napolitana",
         "price": 700,
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        "pictureUrl": "https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2018/05/milanesa-napolitana-ok-1.jpg",
+        "category": "Mila",
         "description": "No, no es importada. Solo le ponemos queso y tomate encima. (Sí, también viene con papas)."
     },
     {
         "id": 2,
         "title": "Sandwich de milanesa",
         "price": 700,
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        "pictureUrl": "https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg",
+        "category": "Mila",
         "description": "Pan con pan comida de tontos. Menos mal que el pan del medio tiene carne y se sirve con papas."
     },
     {
         "id": 3,
         "title": "Milanesa de soja",
         "price": 700,
-        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+        "pictureUrl": "https://elsol-compress.s3-accelerate.amazonaws.com/files/1644930830700Milanesa_soja_clasica-1-crop-c0-5__0-5-1080x1080-70.jpg",
+        "category": "Mila",
         "description": "Sin palabras (ni carne)."
+    },
+    {
+        "id": 4,
+        "title": "Coca-cola",
+        "price": 200,
+        "pictureUrl": "https://www.rimoldimayorista.com.ar/datos/uploads/mod_catalogo/31308/coca-1-5-605e30445448a.jpg",
+        "category": "Bebidas",
+        "description": "1,5 Lts"
+    },
+    {
+        "id": 5,
+        "title": "Sprite",
+        "price": 200,
+        "pictureUrl": "https://4-reinas-bebidas.tiendalite.com/images/products/500/94951008-343.png",
+        "category": "Bebidas",
+        "description": "1 Lts"
+    },
+    {
+        "id": 6,
+        "title": "Pepsi",
+        "price": 220,
+        "pictureUrl": "https://cdn.shopify.com/s/files/1/0406/3916/8675/products/Pepsi1L.jpg",
+        "category": "Bebidas",
+        "description": "1 Lts"
+    },
+    {
+        "id": 7,
+        "title": "Manaos",
+        "price": 180,
+        "pictureUrl": "https://http2.mlstatic.com/D_NQ_NP_716200-MLA43739181284_102020-V.jpg",
+        "category": "Bebidas",
+        "description": "1 Lts"
+    },
+    {
+        "id": 8,
+        "title": "Quilmes",
+        "price": 200,
+        "pictureUrl": "https://jumboargentina.vteximg.com.br/arquivos/ids/433499-512-512/Quilmes-Cristal-1-L-Retornable-3-18652.jpg",
+        "category": "Bebidas",
+        "description": "1Lts"
     }
 ]

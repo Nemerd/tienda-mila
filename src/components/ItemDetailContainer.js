@@ -1,23 +1,15 @@
-import {useState} from 'react';
+import React from 'react';
 import ItemDetail from './ItemDetail';
+import placeholder from "../database/database.json";
+import { useParams } from 'react-router-dom';
 
-function ItemDetailContainer({index, placeholder}){
+function ItemDetailContainer(){
     
-    const [item, setItem] = useState({})
-
-    const getItem = () => {
-        // TODO Cambiar cuando se consiga el JSON.
-        fetch("../database/database.json")
-        .then( res => res.json())
-        .then( list => setItem(list[index]))
-    }
-
-    // Borrar despues
-    setTimeout(setItem(placeholder), 2000)
+    const ID = useParams()
     
     return (
         <>
-        <ItemDetail item={item} />
+        <ItemDetail item={placeholder[ID.id]} />
         </>
     )
 }

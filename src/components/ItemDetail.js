@@ -1,3 +1,4 @@
+import React from "react";
 import "./ItemDetail.css"
 
 function ItemDetail({item}){
@@ -7,7 +8,7 @@ function ItemDetail({item}){
             <div className="ItemDetail">
                 <p className="title">{title}</p>
                 <p className="price">${price}</p>
-                <img className="picture" src={pictureUrl} />
+                <img className="picture" src={pictureUrl} alt="Product" />
                 <p className="description">{description}</p>
             </div>
         )

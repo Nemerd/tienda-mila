@@ -1,6 +1,13 @@
+import React from "react";
+import placeholder from "../database/database.json";
+import ItemList from "./ItemList";
+
 function ItemListContainer(params) {
+
     return (
-        <p>Hola mundo!</p>
+        <>
+        <ItemList item={placeholder}/>
+        </>
     );
 }
 
