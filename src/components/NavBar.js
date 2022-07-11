@@ -22,6 +22,12 @@ function NavBar(props) {
             <Link to="/">
                 <div>Tienda</div>
             </Link>
+            <Link to="/category/Mila">
+                <div>Comidas</div>
+            </Link>
+            <Link to="/category/Bebidas">
+                <div>Bebidas</div>
+            </Link>
             <CartWidget num="5" />
             {props.children}
         </div>

@@ -9,7 +9,7 @@ function Item({id, title, price, pictureUrl}) {
             <p className="title">{title}</p>
             <p className="price">${price}</p>
             <img className="picture" src={pictureUrl} alt="Producto" />
-            <Link to={`/item/${id}`}>Agregar</Link>
+            <Link to={`/item/${id}`}>Detalle</Link>
         </div>
     )
 }
